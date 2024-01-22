@@ -11,7 +11,8 @@
         "respuesta": [
             "Buena",
             "Normal",
-            "Mala"
+            "Mala",
+            "No me acuerdo"
         ],
         "texto": "En esta fase, las personas se evalúan mutuamente, buscando presentarse de manera favorable."
     },
@@ -27,7 +28,8 @@
         "respuesta": [
             "Mucho, tenemos intereses comunes",
             "Sin más",
-            "No, lo hago por cortesía"
+            "No, lo hago por cortesía",
+            "No lo sé"
         ],
         "texto": "Aquí, se produce un intercambio de información, similar al 'ritual de olfateo' en animales, llevando a una transición de desconocidos a conocidos."
     },
@@ -43,14 +45,15 @@
         "respuesta": [
             "Sí, hemos vivido experiencias muy íntimas",
             "Hemos compartido vivencias casuales",
-            "Sí, pero no fue bien"
+            "Sí, pero no fue bien",
+            "No"
         ],
         "texto": "Se señala la apertura a una mayor intimidad, esperando una señal de aceptación antes de avanzar."
     },
     {
         "fase": "Integración",
         "pregunta": "¿Formáis parte de la vida íntima del otro?",
-        "ejemplo": "Señales verbales y no verbales incluyen ejemplos como la fusión con las amistades del otro o la percepción externa de los compañeros como una misma unidad. A pesar de integrarse, las personas suelen mantener un sentido de identidad propio al pasar tiempo con amigos y familiares por separado, equilibrando así la independencia y conexión. La ruptura de este equilibrio puede generar dependencia en una de las partes, lo que podría afectar negativamente la relación.",
+        "ejemplo": "Ejemplos como la fusión con las amistades del otro o la percepción externa de los compañeros como una misma unidad. A pesar de integrarse, las personas suelen mantener un sentido de identidad propio al pasar tiempo con amigos y familiares por separado, equilibrando así la independencia y conexión. La ruptura de este equilibrio puede generar dependencia en una de las partes, lo que podría afectar negativamente la relación.",
         "letra": [
             "r",
             "f",
@@ -59,7 +62,8 @@
         "respuesta": [
             "Hemos integrado nuestras vidas",
             "Compartimos cosas superficiales",
-            "Sí, pero uno de nosotros es dependiente del otro"
+            "Sí, pero uno de nosotros es dependiente del otro",
+            "No"
         ],
         "texto": "Identidades y personalidades se fusionan, generando un sentido de interdependencia, evidente en diversas formas de relación."
     },
@@ -75,7 +79,8 @@
         "respuesta": [
             "Sí",
             "Tuvimos un vínculo pero se rompió",
-            "No es correspondido"
+            "No es correspondido",
+            "No"
         ],
         "texto": "Se incluye un ritual público que anuncia formalmente el compromiso, principalmente aplicable a parejas románticas."
     },
@@ -91,7 +96,8 @@
         "respuesta": [
             "Nos unen más",
             "No nos afectan",
-            "Nos perjudican"
+            "Nos perjudican",
+            "No tenemos diferencias"
         ],
         "texto": "Las diferencias individuales se comunican, revirtiendo la integración hacia una afirmación de individualidad."
     },
@@ -107,7 +113,8 @@
         "respuesta": [
             "Sí",
             "Sí, pero no muchos",
-            "Sí y nos perjudicó"
+            "Sí y nos perjudicó",
+            "No"
         ],
         "texto": "La comunicación disminuye y ciertos temas se restringen, marcando un cierre verbal entre las personas."
     },
@@ -123,7 +130,8 @@
         "respuesta": [
             "Sí, pero retomamos la relación",
             "Sí",
-            "Sí, y fue a peor"
+            "Sí, y fue a peor",
+            "No"
         ],
         "texto": "La relación puede estancarse, esperando que la comunicación interna evite el conflicto relacional."
     },
@@ -139,7 +147,8 @@
         "respuesta": [
             "Durante una época",
             "Sí pero de forma indirecta",
-            "Sí, de forma directa"
+            "Sí, de forma directa",
+            "No"
         ],
         "texto": "Se busca cerrar las líneas de comunicación para poner fin a la incomodidad, implicando la disociación cognitiva en algunos casos."
     },
@@ -155,7 +164,8 @@
         "respuesta": [
             "Acabó, pero volvió a empezar",
             "No acabó mal",
-            "Acabó mal"
+            "Acabó mal",
+            "No ha acabado"
         ],
         "texto": "Puede ocurrir temprano en la relación o después de años, impulsada por factores externos o cambios internos que debilitan el vínculo."
     }
