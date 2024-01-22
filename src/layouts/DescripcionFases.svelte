@@ -66,7 +66,7 @@
 
 {#if layout === "vertical"}
 <main
-  class="bg-white px-[120px] py-20 flex flex-col justify-center items-center"
+  class="bg-white py-20 flex flex-col justify-center items-center"
 >
   <section class="max-w-[1500px] flex flex-col gap-6 justify-center">
     <section class="ctas flex justify-between">
