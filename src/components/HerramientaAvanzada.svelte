@@ -21,7 +21,7 @@
   }
 </script>
 
-<section class="main w-full h-[100vh] flex items-center py-[400px] flex-col">
+<section class="main w-full flex items-center pt-[300px] flex-col">
   <article class="fases w-full h-[500px] flex items-center justify-center flex-col mb-40">
     <h4
       class="animated text-[--nexusBlue] text-[300px] leading-[60px] tracking-[-120px]"

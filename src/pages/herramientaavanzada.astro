@@ -1,6 +1,7 @@
 ---
 import HerramientaAvanzada from "../components/HerramientaAvanzada.svelte";
 import NavBar from "../components/NavBar.svelte";
+import DescripcionFases from "../layouts/DescripcionFases.svelte";
 ---
 
 <html lang="es">
@@ -21,8 +22,9 @@ import NavBar from "../components/NavBar.svelte";
       >
     </header>
 
-    <main>
+    <main class="flex gap-10 justify-center items-center pt-60">
       <HerramientaAvanzada client:load />
+      <DescripcionFases layout={"vertical"} client:load />
     </main>
   </body>
 </html>
