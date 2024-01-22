@@ -22,6 +22,16 @@
 </script>
 
 <section class="main w-full flex items-center flex-col">
+  <article class="ctos flex flex-col w-full justify-center items-center mb-20">
+    <label for="inputTexto">Ingresa tus fases</label>
+    <input
+      class="border-2"
+      type="text"
+      id="inputTexto"
+      bind:value={inputText}
+      on:input={renderHuella}
+    />
+  </article>
   <article class="fases w-full h-[500px] flex items-center justify-center flex-col mb-40">
     <h4
       class="animated text-[--nexusBlue] text-[300px] leading-[60px] tracking-[-120px]"
@@ -33,14 +43,5 @@
       {fourthRow}
     </h4>
   </article>
-  <article class="ctos flex flex-col w-full justify-center items-center mt-20">
-    <label for="inputTexto">Ingresa tus fases</label>
-    <input
-      class="border-2"
-      type="text"
-      id="inputTexto"
-      bind:value={inputText}
-      on:input={renderHuella}
-    />
-  </article>
+  
 </section>
