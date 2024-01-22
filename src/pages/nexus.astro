@@ -15,7 +15,7 @@ import Huella from "../components/Huella.svelte";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexus</title>
-    <link rel="icon" href="./public/favicon.svg">
+    <link rel="icon" href="./public/favicon.svg" />
   </head>
   <body>
     <header class="wrap z-1">
@@ -30,80 +30,81 @@ import Huella from "../components/Huella.svelte";
             <span class="highlight_big text-[100px] leading-[120px]">Nexus</span
             > ?
           </h2>
-          <Huella slot="huella"/>
+          <Huella slot="huella" />
         </Home>
       </section>
 
       <section>
         <Quote>
-          <h4 slot="quote" class="max-w-[1440px] text-center text-pretty">
-            Nexus es un proyecto que, basado en la teoría de <span
-              class="highlight_small text-[40px] tracking-tight"
-              >relaciones interpersonales</span
-            > de Lewin, relaciona el modelo <span
-              class="highlight_small text-[40px] tracking-tight">proxémixo</span
-            > de Hall con las diferentes <span
-              class="highlight_small text-[40px] tracking-tight">fases</span
-            > de una relación
-          </h4>
+          <quote slot="quote" class="max-w-[1440px] text-center text-pretty">
+            <h4>
+              Nexus es un proyecto que, basado en la teoría de <span
+                class="highlight_small text-[40px] tracking-tight"
+                >relaciones interpersonales</span
+              > de Lewin, relaciona el modelo <span
+                class="highlight_small text-[40px] tracking-tight"
+                >proxémixo</span
+              > de Hall con las diferentes <span
+                class="highlight_small text-[40px] tracking-tight">fases</span
+              > de una relación
+            </h4>
+          </quote>
         </Quote>
-      </section>
 
-      <section>
-        <Intro>
-          <h1 slot="title" class="w-full font-semibold text-pretty">
-            Nace de una tipografía
-            <span class="highlight_big text-[144px] text-pretty"
-              >experimental</span
-            >
-          </h1>
-          <h3 slot="text" class="max-w-[944px] text-pretty">
-            Las letras de la <span class="highlight_small text-[52px]"
-              >tipografía</span
-            > se asocian a las diez <span class="highlight_small text-[52px]"
-              >etapas</span
-            > de las relaciones. Cada etapa puede tener tres interpretaciones: <span
-              class="highlight_small text-[52px]">positiva</span
-            >, <span class="highlight_small text-[52px]">negativa</span> o <span
-              class="highlight_small text-[52px]">neutra</span
-            >, asociando cada una a cada glifo de la tipografía
-          </h3>
-        </Intro>
-      </section>
+        <section>
+          <Intro>
+            <h1 slot="title" class="w-full font-semibold text-pretty">
+              Nace de una tipografía
+              <span class="highlight_big text-[144px] text-pretty"
+                >experimental</span
+              >
+            </h1>
+            <h3 slot="text" class="max-w-[944px] text-pretty">
+              Las letras de la <span class="highlight_small text-[52px]"
+                >tipografía</span
+              > se asocian a las diez <span class="highlight_small text-[52px]"
+                >etapas</span
+              > de las relaciones. Cada etapa puede tener tres interpretaciones:
+              <span class="highlight_small text-[52px]">positiva</span>, <span
+                class="highlight_small text-[52px]">negativa</span
+              > o <span class="highlight_small text-[52px]">neutra</span>,
+              asociando cada una a cada glifo de la tipografía
+            </h3>
+          </Intro>
+        </section>
 
-      <section>
-        <DescripcionFases client:load />
-      </section>
+        <section>
+          <DescripcionFases layout={"horizontal"} client:load />
+        </section>
 
-      <section>
-        <PreFooter>
-          <div slot="text" class="text_wrap flex flex-col gap-10">
-            <h4 class="max-w-[624px] leading-10">
-              Cada etapa deja marca en una relación.
-            </h4>
-            <h4 class="max-w-[624px] leading-10">
-              Nexus permite crear la huella de tus relaciones personales en
-              función de las etapas vividas y de cómo fue la experiencia.
-            </h4>
-          </div>
-        </PreFooter>
-      </section>
+        <section>
+          <PreFooter>
+            <div slot="text" class="text_wrap flex flex-col gap-10">
+              <h4 class="max-w-[624px] leading-10">
+                Cada etapa deja marca en una relación.
+              </h4>
+              <h4 class="max-w-[624px] leading-10">
+                Nexus permite crear la huella de tus relaciones personales en
+                función de las etapas vividas y de cómo fue la experiencia.
+              </h4>
+            </div>
+          </PreFooter>
+        </section>
 
-      <section>
-        <ButtonLayout button_text="Crea tu huella" route="herramienta" />
+        <section>
+          <ButtonLayout button_text="Crea tu huella" route="herramienta" />
+        </section>
       </section>
     </main>
   </body>
-</html>
 
-<style is:global>
-  @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,800&display=swap");
+  <style is:global>
+    @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,800&display=swap");
 
-  @font-face {
+    @font-face {
       font-family: "Connect";
-      src: url("/Connect.ttf")
-        format("truetype-variations");
+      src: url("/Connect.ttf") format("truetype-variations");
     }
     @font-face {
       font-family: "Pixelify";
@@ -114,12 +115,12 @@ import Huella from "../components/Huella.svelte";
       src: url("/PixelifySans-SemiBold.ttf");
     }
 
-  :root {
-    --weightH1: 1000;
-    --weightH2: 100;
-    --nexusBlue: #1945df;
-    font-family: "Raleway";
-  }
+    :root {
+      --weightH1: 1000;
+      --weightH2: 100;
+      --nexusBlue: #1945df;
+      font-family: "Raleway";
+    }
 
     /*.scroller {
       height: 100vh;
@@ -132,58 +133,59 @@ import Huella from "../components/Huella.svelte";
     .scroller section {
       scroll-snap-align: start;
     }*/
-  h1 {
-    font-size: 128px;
-    line-height: 110px;
-  }
-  h2 {
-    font-size: 64px;
-    line-height: 72px;
-  }
-  h3 {
-    font-size: 48px;
-    line-height: 56px;
-  }
-  h4 {
-    font-size: 36px;
-    line-height: 40px;
-  }
-  p {
-    font-size: 18px;
-  }
-  .animated {
-    margin: 0;
-    font-variation-settings:
-      "wght" var(--weightH1),
-      "wdth" 125;
-    font-family: "Connect";
-    transition: 1s;
-  }
-  .animated:hover {
-    font-variation-settings:
-      "wght" var(--weightH2),
-      "wdth" 125;
-    transition: 1s;
-  }
-  .highlight_small {
-    color: var(--nexusBlue);
-    font-family: "Pixelify";
-    letter-spacing: -0.025rem;
-  }
-  .highlight_big {
-    color: var(--nexusBlue);
-    font-family: "Pixelify";
-    letter-spacing: -0.5rem;
-  }
-  .highlight_small_white {
-    color: white;
-    font-family: "Pixelify";
-    letter-spacing: -0.025rem;
-  }
-  .highlight_big_white {
-    color: white;
-    font-family: "Pixelify";
-    letter-spacing: -0.5rem;
-  }
-</style>
-x
+    h1 {
+      font-size: 128px;
+      line-height: 110px;
+    }
+    h2 {
+      font-size: 64px;
+      line-height: 72px;
+    }
+    h3 {
+      font-size: 48px;
+      line-height: 56px;
+    }
+    h4 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .animated {
+      margin: 0;
+      font-variation-settings:
+        "wght" var(--weightH1),
+        "wdth" 125;
+      font-family: "Connect";
+      transition: 1s;
+    }
+    .animated:hover {
+      font-variation-settings:
+        "wght" var(--weightH2),
+        "wdth" 125;
+      transition: 1s;
+    }
+    .highlight_small {
+      color: var(--nexusBlue);
+      font-family: "Pixelify";
+      letter-spacing: -0.025rem;
+    }
+    .highlight_big {
+      color: var(--nexusBlue);
+      font-family: "Pixelify";
+      letter-spacing: -0.5rem;
+    }
+    .highlight_small_white {
+      color: white;
+      font-family: "Pixelify";
+      letter-spacing: -0.025rem;
+    }
+    .highlight_big_white {
+      color: white;
+      font-family: "Pixelify";
+      letter-spacing: -0.5rem;
+    }
+  </style>
+  x
+</html>

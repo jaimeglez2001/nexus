@@ -28,10 +28,15 @@
 >
   <section class="max-w-[1500px] flex flex-col gap-10 justify-center">
     <section class="ctas flex justify-between">
-      <h4>
-        Fase de <br />
-        <span class="highlight_small text-[40px]">{etapas[count].fase}</span>
-      </h4>
+      <article class="flex flex-col gap-4">
+        <h4 class="highlight_small">
+          {count + 1} / 10
+        </h4>
+        <h4>
+          Fase de <br />
+          <span class="highlight_small text-[40px]">{etapas[count].fase}</span>
+        </h4>
+      </article>
       <article class="arrows flex gap-4 justify-end items-center">
         <button class="p-4 border-2 border-black" on:click={countDown}>
           <img src="./public/arrow-left.svg" alt="" class="h-10" />
@@ -63,12 +68,17 @@
 <main
   class="bg-white px-[120px] py-20 flex flex-col justify-center items-center"
 >
-  <section class="max-w-[1500px] flex flex-col gap-10 justify-center">
+  <section class="max-w-[1500px] flex flex-col gap-6 justify-center">
     <section class="ctas flex justify-between">
-      <h4>
-        Fase de <br />
-        <span class="highlight_small text-[40px]">{etapas[count].fase}</span>
-      </h4>
+      <article class="flex items-center gap-10">
+        <h4 class="highlight_small">
+          {count + 1} / 10
+        </h4>
+        <h4>
+          Fase de <br />
+          <span class="highlight_small text-[40px]">{etapas[count].fase}</span>
+        </h4>
+      </article>
       <article class="arrows flex gap-4 justify-end items-center">
         <button class="p-4 border-2 border-black" on:click={countDown}>
           <img src="./public/arrow-left.svg" alt="" class="h-10" />
@@ -78,7 +88,7 @@
         </button>
       </article>
     </section>
-    <section class="info flex flex-col gap-10 justify-between max-w-[760px]">
+    <section class="info flex flex-col gap-6 justify-between max-w-[760px]">
       <article
         class="text_wrap bg-[--nexusBlue] w-full p-10 flex items-end h-full"
       >

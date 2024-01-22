@@ -15,7 +15,7 @@ import Huella from "../components/Huella.svelte";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proxémica | Nexus</title>
-    <link rel="icon" href="./public/favicon.svg">
+    <link rel="icon" href="./public/favicon.svg" />
   </head>
   <body>
     <header class="wrap z-1">
@@ -32,118 +32,121 @@ import Huella from "../components/Huella.svelte";
               >Proxémica</span
             >
           </h2>
-          <Huella slot="huella"/>
+          <Huella slot="huella" />
         </Home>
       </section>
 
       <section>
         <Quote>
-          <h4 slot="quote" class="max-w-[1440px] text-center text-pretty">
-            La <span class="highlight_small text-[40px] tracking-tight"
-              >proxémica</span
-            > tiene sus raíces en investigaciones etológicas que exploraban cómo
-            los animales distribuyen su <span
-              class="highlight_small text-[40px] tracking-tight">espacio</span
-            >. Posteriormente, pensadores como Edward T. Hall aplicaron dichas
-            investigaciones al estudio de la comunicación en sociedades humanas
-            durante la década de 1960
-          </h4>
+          <quote slot="quote" class="max-w-[1440px] text-center text-pretty">
+            <h4>
+              La <span class="highlight_small text-[40px] tracking-tight"
+                >proxémica</span
+              > tiene sus raíces en investigaciones etológicas que exploraban cómo
+              los animales distribuyen su <span
+                class="highlight_small text-[40px] tracking-tight">espacio</span
+              >. Posteriormente, pensadores como Edward T. Hall aplicaron dichas
+              investigaciones al estudio de la comunicación en sociedades
+              humanas durante la década de 1960
+            </h4>
+          </quote>
         </Quote>
-      </section>
 
-      <section>
-        <Intro>
-          <figure>
-            <img
-              slot="picture"
-              src="./public/Vector2.svg"
-              class="w-[500px] absolute top-0 right-0"
-            />
-          </figure>
+        <section>
+          <Intro>
+            <figure>
+              <img
+                slot="picture"
+                src="./public/Vector2.svg"
+                class="w-[500px] absolute top-0 right-0"
+              />
+            </figure>
 
-          <h1 slot="title" class="w-full font-semibold text-pretty">
-            La
-            <span class="highlight_big text-[144px] text-pretty">proxémica</span
+            <h1 slot="title" class="w-full font-semibold text-pretty">
+              La
+              <span class="highlight_big text-[144px] text-pretty"
+                >proxémica</span
+              >
+              estudia la organización del espacio en la comunicación
+            </h1>
+            <h3 slot="text" class="max-w-[944px] text-pretty">
+              Es una rama de la semiótica que analiza las <span
+                class="highlight_small text-[52px]">relaciones espaciales</span
+              > entre <span class="highlight_small text-[52px]">individuos</span
+              > y objetos durante la interacción, considerando posturas adoptadas
+              y la presencia o ausencia de <span
+                class="highlight_small text-[52px]">contacto</span
+              > físico
+            </h3>
+          </Intro>
+        </section>
+
+        <section>
+          <DoubleTextBlue>
+            <h3
+              slot="top_text"
+              class="text-white max-w-[840px] uppercase text-right"
             >
-            estudia la organización del espacio en la comunicación
-          </h1>
-          <h3 slot="text" class="max-w-[944px] text-pretty">
-            Es una rama de la semiótica que analiza las <span
-              class="highlight_small text-[52px]">relaciones espaciales</span
-            > entre <span class="highlight_small text-[52px]">individuos</span> y
-            objetos durante la interacción, considerando posturas adoptadas y la
-            presencia o ausencia de <span class="highlight_small text-[52px]"
-              >contacto</span
-            > físico
-          </h3>
-        </Intro>
-      </section>
+              El
+              <span class="highlight_small_white text-[52px]">modelo</span> de Hall
+              clasifica el
+              <span class="highlight_small_white text-[52px]">espacio</span> personal
+              en cuatro subcategorías
+            </h3>
+          </DoubleTextBlue>
+        </section>
 
-      <section>
-        <DoubleTextBlue>
-          <h3
-            slot="top_text"
-            class="text-white max-w-[840px] uppercase text-right"
-          >
-            El
-            <span class="highlight_small_white text-[52px]">modelo</span> de Hall
-            clasifica el
-            <span class="highlight_small_white text-[52px]">espacio</span> personal
-            en cuatro subcategorías
-          </h3>
-        </DoubleTextBlue>
-      </section>
+        <section
+          class="bg-white px-[120px] py-20 flex flex-col gap-20 w-[100vw]"
+        >
+          <article class="flex">
+            <h4 class="w-[617px]">
+              El nivel de proximidad entre dos individuos es directamente
+              proporcional a su nivel de conexión
+            </h4>
+          </article>
+          <div class="cards">
+            <div class="carousell flex flex-wrap justify-center gap-10">
+              <CardProxemica
+                title="Espacio íntimo"
+                img="espacio_intimo.jpg"
+                text="Rango cercano al contacto físico. Puede subdividirse en dos intervalos: para situaciones de máxima intimidad y para distancias menos íntimas pero dentro de un marco de privacidad."
+              />
 
-      <section class="bg-white px-[120px] py-20 flex flex-col gap-20 w-[100vw]">
-        <article class="flex">
-          <h4 class="w-[617px]">
-            El nivel de proximidad entre dos individuos es directamente
-            proporcional a su nivel de conexión
-          </h4>
-        </article>
-        <div class="cards">
-          <div class="carousell flex flex-wrap justify-center gap-10">
-            <CardProxemica
-              title="Espacio íntimo"
-              img="espacio_intimo.jpg"
-              text="Rango cercano al contacto físico. Puede subdividirse en dos intervalos: para situaciones de máxima intimidad y para distancias menos íntimas pero dentro de un marco de privacidad."
-            />
+              <CardProxemica
+                title="Espacio personal"
+                img="espacio_personal.jpg"
+                text="Es común en relaciones interpersonales, permitiendo el contacto físico."
+              />
 
-            <CardProxemica
-              title="Espacio personal"
-              img="espacio_personal.jpg"
-              text="Es común en relaciones interpersonales, permitiendo el contacto físico."
-            />
+              <CardProxemica
+                title="Espacio social-consultivo"
+                img="espacio_social.jpg"
+                text="Se utiliza en situaciones donde se discuten asuntos no personales."
+              />
 
-            <CardProxemica
-              title="Espacio social-consultivo"
-              img="espacio_social.jpg"
-              text="Se utiliza en situaciones donde se discuten asuntos no personales."
-            />
-
-            <CardProxemica
-              title="Espacio público"
-              img="espacio_publico.jpg"
-              text="Va desde la categoría anterior hasta el límite de lo visible o lo audible. A esta distancia, los participantes necesitan amplificar recursos como la voz para facilitar la comunicación, como en conferencias."
-            />
+              <CardProxemica
+                title="Espacio público"
+                img="espacio_publico.jpg"
+                text="Va desde la categoría anterior hasta el límite de lo visible o lo audible. A esta distancia, los participantes necesitan amplificar recursos como la voz para facilitar la comunicación, como en conferencias."
+              />
+            </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <ButtonLayout button_text="Nexus" route="nexus" />
+        </section>
+        <section>
+          <ButtonLayout button_text="Nexus" route="nexus" />
+        </section>
       </section>
     </main>
   </body>
-</html>
 
-<style is:global>
-  @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,800&display=swap");
+  <style is:global>
+    @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,800&display=swap");
 
-  @font-face {
+    @font-face {
       font-family: "Connect";
-      src: url("/Connect.ttf")
-        format("truetype-variations");
+      src: url("/Connect.ttf") format("truetype-variations");
     }
     @font-face {
       font-family: "Pixelify";
@@ -153,12 +156,12 @@ import Huella from "../components/Huella.svelte";
       font-family: "Pixelify";
       src: url("/PixelifySans-SemiBold.ttf");
     }
-  :root {
-    --weightH1: 1000;
-    --weightH2: 100;
-    --nexusBlue: #1945df;
-    font-family: "Raleway";
-  }
+    :root {
+      --weightH1: 1000;
+      --weightH2: 100;
+      --nexusBlue: #1945df;
+      font-family: "Raleway";
+    }
 
     /*.scroller {
       height: 100vh;
@@ -171,58 +174,59 @@ import Huella from "../components/Huella.svelte";
     .scroller section {
       scroll-snap-align: start;
     }*/
-  h1 {
-    font-size: 128px;
-    line-height: 110px;
-  }
-  h2 {
-    font-size: 64px;
-    line-height: 72px;
-  }
-  h3 {
-    font-size: 48px;
-    line-height: 56px;
-  }
-  h4 {
-    font-size: 36px;
-    line-height: 40px;
-  }
-  p {
-    font-size: 18px;
-  }
-  .animated {
-    margin: 0;
-    font-variation-settings:
-      "wght" var(--weightH1),
-      "wdth" 125;
-    font-family: "Connect";
-    transition: 1s;
-  }
-  .animated:hover {
-    font-variation-settings:
-      "wght" var(--weightH2),
-      "wdth" 125;
-    transition: 1s;
-  }
-  .highlight_small {
-    color: var(--nexusBlue);
-    font-family: "Pixelify";
-    letter-spacing: -0.025rem;
-  }
-  .highlight_big {
-    color: var(--nexusBlue);
-    font-family: "Pixelify";
-    letter-spacing: -0.5rem;
-  }
-  .highlight_small_white {
-    color: white;
-    font-family: "Pixelify";
-    letter-spacing: -0.025rem;
-  }
-  .highlight_big_white {
-    color: white;
-    font-family: "Pixelify";
-    letter-spacing: -0.5rem;
-  }
-</style>
-x
+    h1 {
+      font-size: 128px;
+      line-height: 110px;
+    }
+    h2 {
+      font-size: 64px;
+      line-height: 72px;
+    }
+    h3 {
+      font-size: 48px;
+      line-height: 56px;
+    }
+    h4 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .animated {
+      margin: 0;
+      font-variation-settings:
+        "wght" var(--weightH1),
+        "wdth" 125;
+      font-family: "Connect";
+      transition: 1s;
+    }
+    .animated:hover {
+      font-variation-settings:
+        "wght" var(--weightH2),
+        "wdth" 125;
+      transition: 1s;
+    }
+    .highlight_small {
+      color: var(--nexusBlue);
+      font-family: "Pixelify";
+      letter-spacing: -0.025rem;
+    }
+    .highlight_big {
+      color: var(--nexusBlue);
+      font-family: "Pixelify";
+      letter-spacing: -0.5rem;
+    }
+    .highlight_small_white {
+      color: white;
+      font-family: "Pixelify";
+      letter-spacing: -0.025rem;
+    }
+    .highlight_big_white {
+      color: white;
+      font-family: "Pixelify";
+      letter-spacing: -0.5rem;
+    }
+  </style>
+  x
+</html>

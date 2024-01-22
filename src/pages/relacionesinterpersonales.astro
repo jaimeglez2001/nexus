@@ -14,7 +14,7 @@ import Huella from "../components/Huella.svelte";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Relaciones Interpersonales | Nexus</title>
-    <link rel="icon" href="./public/favicon.svg">
+    <link rel="icon" href="./public/favicon.svg" />
   </head>
   <body>
     <header class="wrap z-1">
@@ -32,90 +32,87 @@ import Huella from "../components/Huella.svelte";
               Interpersonales</span
             >
           </h2>
-          <Huella slot="huella"/>
+          <Huella slot="huella" />
         </Home>
-      </section>
 
-      <section>
         <Quote author="Kurt Lewin">
-          <h4 slot="quote" class="max-w-[1440px] text-center text-pretty">
-            El comportamiento humano se concibe como el resultado de un campo o
-            “<span class="highlight_small text-[40px] tracking-tight"
-              >espacio vital</span
-            > , compuesto por hechos coexistentes donde el <span
-              class="highlight_small text-[40px] tracking-tight">cambio</span
-            > en una parte afecta al <span
-              class="highlight_small text-[40px] tracking-tight">conjunto</span
-            >
-          </h4>
-        </Quote>
-      </section>
-
-      <section>
-        <DoubleTextBlue>
-          <figure>
-            <img slot="picture" src="./public/Vector.svg" alt="" />
-          </figure>
-          <h3
-            slot="top_text"
-            class="text-white max-w-[840px] uppercase text-right mb-20"
-          >
-            Podemos entender ese
-            <span class="highlight_small_white text-[52px]"
-              >"espacio vital"</span
-            >
-            como el cojunto de relaciones personales d eun individuo
-          </h3>
-        </DoubleTextBlue>
-      </section>
-
-      <section>
-        <PreFooter>
-          <div slot="text" class="text_wrap flex flex-col gap-10">
-            <h4 class="max-w-[624px] leading-10">
-              El <span class="highlight_small text-[40px]">individuo</span> y su
-              <span class="highlight_small text-[40px]">"espacio vital"</span> no
-              son entidades separadas, sino que constantemente <span
-                class="highlight_small text-[40px]">interactúan</span
-              > y se modifican mutuamente en tiempo real, es decir, son una misma
-              entidad.
+          <quote slot="quote" class="max-w-[1440px] text-center text-pretty">
+            <h4>
+              El comportamiento humano se concibe como el resultado de un campo
+              o “<span class="highlight_small text-[40px] tracking-tight"
+                >espacio vital</span
+              > , compuesto por hechos coexistentes donde el <span
+                class="highlight_small text-[40px] tracking-tight">cambio</span
+              > en una parte afecta al <span
+                class="highlight_small text-[40px] tracking-tight"
+                >conjunto</span
+              >
             </h4>
-          </div>
-        </PreFooter>
-      </section>
+          </quote>
+        </Quote>
 
-      <section>
-        <ButtonLayout button_text="Proxémica" route="proxemica" />
+        <section>
+          <DoubleTextBlue>
+            <img slot="picture" src="./public/Vector.svg" alt="" />
+            <h3
+              slot="top_text"
+              class="text-white max-w-[840px] uppercase text-right mb-20"
+            >
+              Podemos entender ese
+              <span class="highlight_small_white text-[52px]"
+                >"espacio vital"</span
+              >
+              como el cojunto de relaciones personales de un individuo
+            </h3>
+          </DoubleTextBlue>
+        </section>
+
+        <section>
+          <PreFooter>
+            <div slot="text" class="text_wrap flex flex-col gap-10">
+              <h4 class="max-w-[624px] leading-10">
+                El <span class="highlight_small text-[40px]">individuo</span> y su
+                <span class="highlight_small text-[40px]">"espacio vital"</span>
+                no son entidades separadas, sino que constantemente <span
+                  class="highlight_small text-[40px]">interactúan</span
+                > y se modifican mutuamente en tiempo real, es decir, son una misma
+                entidad.
+              </h4>
+            </div>
+          </PreFooter>
+        </section>
+
+        <section>
+          <ButtonLayout button_text="Proxémica" route="proxemica" />
+        </section>
       </section>
     </main>
-  </body>
 
-  <style is:global>
-    @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,800&display=swap");
+    <style is:global>
+      @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,800&display=swap");
 
-    @font-face {
-      font-family: "Connect";
-      src: url("/Connect.ttf")
-        format("truetype-variations");
-    }
-    @font-face {
-      font-family: "Pixelify";
-      src: url("/PixelifySans-Regular.ttf");
-    }
-    @font-face {
-      font-family: "Pixelify";
-      src: url("/PixelifySans-SemiBold.ttf");
-    }
+      @font-face {
+        font-family: "Connect";
+        src: url("/Connect.ttf") format("truetype-variations");
+      }
+      @font-face {
+        font-family: "Pixelify";
+        src: url("/PixelifySans-Regular.ttf");
+      }
+      @font-face {
+        font-family: "Pixelify";
+        src: url("/PixelifySans-SemiBold.ttf");
+      }
 
-    :root {
-      --weightH1: 1000;
-      --weightH2: 100;
-      --nexusBlue: #1945df;
-      font-family: "Raleway";
-    }
+      :root {
+        --weightH1: 1000;
+        --weightH2: 100;
+        --nexusBlue: #1945df;
+        font-family: "Raleway";
+      }
 
-    /*.scroller {
+      /*.scroller {
       height: 100vh;
       overflow-y: scroll;
       scroll-snap-type: y mandatory;
@@ -126,59 +123,60 @@ import Huella from "../components/Huella.svelte";
     .scroller section {
       scroll-snap-align: start;
     }*/
-    h1 {
-      font-size: 128px;
-      line-height: 110px;
-    }
-    h2 {
-      font-size: 64px;
-      line-height: 72px;
-    }
-    h3 {
-      font-size: 48px;
-      line-height: 56px;
-    }
-    h4 {
-      font-size: 36px;
-      line-height: 40px;
-    }
-    p {
-      font-size: 18px;
-    }
-    .animated {
-      margin: 0;
-      font-variation-settings:
-        "wght" var(--weightH1),
-        "wdth" 125;
-      font-family: "Connect";
-      transition: 1s;
-    }
-    .animated:hover {
-      font-variation-settings:
-        "wght" var(--weightH2),
-        "wdth" 125;
-      transition: 1s;
-    }
-    .highlight_small {
-      color: var(--nexusBlue);
-      font-family: "Pixelify";
-      letter-spacing: -0.025rem;
-    }
-    .highlight_big {
-      color: var(--nexusBlue);
-      font-family: "Pixelify";
-      letter-spacing: -0.5rem;
-      line-height: 82px;
-    }
-    .highlight_small_white {
-      color: white;
-      font-family: "Pixelify";
-      letter-spacing: -0.025rem;
-    }
-    .highlight_big_white {
-      color: white;
-      font-family: "Pixelify";
-      letter-spacing: -0.5rem;
-    }
-  </style>
+      h1 {
+        font-size: 128px;
+        line-height: 110px;
+      }
+      h2 {
+        font-size: 64px;
+        line-height: 72px;
+      }
+      h3 {
+        font-size: 48px;
+        line-height: 56px;
+      }
+      h4 {
+        font-size: 36px;
+        line-height: 40px;
+      }
+      p {
+        font-size: 18px;
+      }
+      .animated {
+        margin: 0;
+        font-variation-settings:
+          "wght" var(--weightH1),
+          "wdth" 125;
+        font-family: "Connect";
+        transition: 1s;
+      }
+      .animated:hover {
+        font-variation-settings:
+          "wght" var(--weightH2),
+          "wdth" 125;
+        transition: 1s;
+      }
+      .highlight_small {
+        color: var(--nexusBlue);
+        font-family: "Pixelify";
+        letter-spacing: -0.025rem;
+      }
+      .highlight_big {
+        color: var(--nexusBlue);
+        font-family: "Pixelify";
+        letter-spacing: -0.5rem;
+        line-height: 82px;
+      }
+      .highlight_small_white {
+        color: white;
+        font-family: "Pixelify";
+        letter-spacing: -0.025rem;
+      }
+      .highlight_big_white {
+        color: white;
+        font-family: "Pixelify";
+        letter-spacing: -0.5rem;
+      }
+    </style>
+  </body>
 </html>

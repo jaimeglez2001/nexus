@@ -43,14 +43,15 @@ import Huella from "../components/Huella.svelte";
         </Home>
 
         <Quote author="Judith E. Glaser">
-          <h4 slot="quote" class="max-w-[1024px] text-center">
-            “Cada <span class="highlight_small text-[40px] tracking-tight"
+          <quote slot="quote" class="max-w-[1024px] text-center">
+            <h4>“Cada <span class="highlight_small text-[40px] tracking-tight"
               >individuo</span
             > posee una voz interior que rápidamente evalúa la <span
               class="highlight_small text-[40px] tracking-tight"
               >relevancia</span
             > o significado de algo o alguien”
-          </h4>
+            </h4> 
+          </quote>
         </Quote>
 
         <Experimental>
@@ -169,8 +170,7 @@ import Huella from "../components/Huella.svelte";
 
     @font-face {
       font-family: "Connect";
-      src: url("/Connect.ttf")
-        format("truetype-variations");
+      src: url("/Connect.ttf") format("truetype-variations");
     }
     @font-face {
       font-family: "Pixelify";
