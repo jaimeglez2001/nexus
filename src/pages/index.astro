@@ -1,0 +1,259 @@
+---
+import Home from "../layouts/Home.astro";
+import Experimental from "../layouts/Experimental.astro";
+import Intro from "../layouts/Intro.astro";
+import DoubleTextBlue from "../layouts/DoubleTextBlue.astro";
+import NavBar from "../components/NavBar.svelte";
+import ButtonLayout from "../layouts/ButtonLayout.astro";
+import PreFooter from "../layouts/PreFooter.astro";
+import Quote from "../layouts/Quote.astro";
+import Huella from "../components/Huella.svelte";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Proyecto experimental de tipografía  realizado por Jaime González como TFG de Diseño Gráfico en la Escuela Superior de Diseño de Madrid"
+    />
+    <title>Home | Nexus</title>
+    <link rel="icon" href="./public/favicon.svg" />
+  </head>
+  <header class="wrap z-1">
+    <NavBar nav="/" />
+  </header>
+
+  <body>
+    <header class="wrap z-1">
+      <NavBar nav="/" />
+    </header>
+
+    <main class="scroller">
+      <section class="sticky">
+        <Home>
+          <h1 class="text-[80px] leading-[80px]" slot="title">
+            Bienvenido a
+            <br />
+            <span class="highlight_big text-[100px]">Nexus</span>
+          </h1>
+          <Huella slot="huella" />
+        </Home>
+
+        <Quote author="Judith E. Glaser">
+          <h4 slot="quote" class="max-w-[1024px] text-center">
+            “Cada <span class="highlight_small text-[40px] tracking-tight"
+              >individuo</span
+            > posee una voz interior que rápidamente evalúa la <span
+              class="highlight_small text-[40px] tracking-tight"
+              >relevancia</span
+            > o significado de algo o alguien”
+          </h4>
+        </Quote>
+
+        <Experimental>
+          <h2 class="text-white w-full font-semibold">
+            Nexus es un proyecto <span class="highlight_small_white text-[80px]"
+              >experimental</span
+            > que estudia las complejidades de las relaciones personales
+          </h2>
+        </Experimental>
+
+        <section>
+          <Intro>
+            <picture>
+              <img
+                slot="picture"
+                src="./public/Vector2.svg"
+                class="w-[500px] absolute top-0 right-0"
+                alt="Imagen de una huella"
+              />
+            </picture>
+            <h1 slot="title" class="w-full font-semibold">
+              En nuestras vidas nos encontramos con diversidad de
+              <span class="highlight_big text-[144px]">individuos</span>
+            </h1>
+            <h3 slot="text" class="max-w-[944px]">
+              Aunque compartamos <span class="highlight_small text-[52px]"
+                >espacio</span
+              > con ellos, el acto de
+              <span class="highlight_small text-[52px]">"conectar"</span> profundamente
+              se reserva a unos pocos
+            </h3>
+          </Intro>
+        </section>
+      </section>
+
+      <section class="bg-white px-[120px] flex flex-col gap-20 py-40 relative">
+        <article
+          class="w-full bg-[--nexusBlue] flex flex-col justify-center items-center py-10"
+        >
+          <div class="wrap flex justify-center max-w-[983px] flex-col">
+            <h3
+              class="text-white w-full leading-[58px] text-right font-semibold"
+            >
+              La comunicación surge como
+            </h3>
+            <h3 class="text-white w-full leading-[58px] font-semibold">
+              el componente central en la formación y desarrollo de las
+              relaciones <br /> interpersonales
+            </h3>
+          </div>
+        </article>
+
+        <article class="w-full flex justify-end">
+          <h4 class="text-right max-w-[622px] leading-[44px]">
+            Las interacciones diarias y las conversaciones aparentemente
+            triviales desempeñan un papel crucial en la
+            <span class="highlight_small text-[40px]">estructuración</span> de nuestras
+            relaciones
+          </h4>
+        </article>
+
+        <figure class="absolute bottom-0 left-0">
+          <img src="./public/Vector6.svg" alt="Imagen de una huella" />
+        </figure>
+      </section>
+
+      <section>
+        <DoubleTextBlue>
+          <h3
+            slot="top_text"
+            class="text-white max-w-[840px] uppercase text-right mb-20"
+          >
+            Pero la
+            <span class="highlight_small_white text-[52px]">conexión</span> no siempre
+            depende de palabras
+          </h3>
+          <h3 slot="bot_text" class="text-white max-w-[840px] uppercase">
+            compartir tiempo en
+            <span class="highlight_small_white text-[52px]">proximidad</span> también
+            puede ser una poderosa CONEXIÓN
+          </h3>
+        </DoubleTextBlue>
+      </section>
+
+      <section>
+        <PreFooter>
+          <div slot="text" class="text_wrap flex flex-col gap-10">
+            <h4 class="max-w-[624px] leading-10">
+              Cada <span class="highlight_small text-[40px]">relación</span> es única
+              y personal, como una
+              <span class="highlight_small text-[40px]">huella</span> dactilar.
+            </h4>
+            <h4 class="max-w-[624px] leading-10">
+              Hay relaciones que nunca acaban, otras lo hacen muy pronto y otras
+              acaban y vuelven a empezar.
+            </h4>
+            <h4 class="max-w-[624px] leading-10">
+              <span class="highlight_small text-[40px]">Nexus</span> permite crear
+              la
+              <span class="highlight_small text-[40px]">huella</span> de tus propias
+              relaciones personales
+            </h4>
+          </div>
+        </PreFooter>
+      </section>
+
+      <section>
+        <ButtonLayout button_text="Conexiones Humanas" route="conexionhumana" />
+      </section>
+    </main>
+  </body>
+
+  <style is:global>
+    @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,800&display=swap");
+
+    @font-face {
+      font-family: "Connect";
+      src: url("/Connect.ttf")
+        format("truetype-variations");
+    }
+    @font-face {
+      font-family: "Pixelify";
+      src: url("/PixelifySans-Regular.ttf");
+    }
+    @font-face {
+      font-family: "Pixelify";
+      src: url("/PixelifySans-SemiBold.ttf");
+    }
+
+    :root {
+      --weightH1: 1000;
+      --weightH2: 100;
+      --nexusBlue: #1945df;
+      font-family: "Raleway";
+    }
+
+    .scroller {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      scroll-padding: 80px;
+      scroll-behavior: smooth;
+    }
+
+    .scroller section {
+      scroll-snap-align: start;
+    }
+
+    h1 {
+      font-size: 128px;
+      line-height: 110px;
+    }
+    h2 {
+      font-size: 64px;
+      line-height: 72px;
+    }
+    h3 {
+      font-size: 48px;
+      line-height: 56px;
+    }
+    h4 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .animated {
+      margin: 0;
+      font-variation-settings:
+        "wght" var(--weightH1),
+        "wdth" 125;
+      font-family: "Connect";
+      transition: 1s;
+    }
+    .animated:hover {
+      font-variation-settings:
+        "wght" var(--weightH2),
+        "wdth" 125;
+      transition: 1s;
+    }
+    .highlight_small {
+      color: var(--nexusBlue);
+      font-family: "Pixelify";
+      letter-spacing: -0.025rem;
+    }
+    .highlight_big {
+      color: var(--nexusBlue);
+      font-family: "Pixelify";
+      letter-spacing: -0.5rem;
+    }
+    .highlight_small_white {
+      color: white;
+      font-family: "Pixelify";
+      letter-spacing: -0.025rem;
+    }
+    .highlight_big_white {
+      color: white;
+      font-family: "Pixelify";
+      letter-spacing: -0.5rem;
+    }
+  </style>
+
+
+</html>

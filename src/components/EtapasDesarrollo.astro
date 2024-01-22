@@ -1,0 +1,21 @@
+---
+import etapas from "../data/etapas.json";
+---
+
+<section class="slider flex w-full overflow-scroll bg-white">
+  {
+    etapas.map(({ letra, fase, texto }) => (
+      <section class="etapa flex flex-col p-10 border-r-2 h-auto gap-10 items-center">
+        <article class="text_wrap flex">
+          <h2 class="animated text-[--nexusBlue] text-[200px] leading-[200px]">
+            {letra[1]}
+          </h2>
+        </article>
+        <article class="flex flex-col description gap-2">
+          <h3 class="highlight_small text-4xl">{fase}</h3>
+          <p class="w-[280px]">{texto}</p>
+        </article>
+      </section>
+    ))
+  }
+</section>

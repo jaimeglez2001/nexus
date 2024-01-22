@@ -1,0 +1,13 @@
+---
+const { button_text, route } = Astro.props;
+---
+
+<button
+  class="py-4 px-8 border-black border-2 rounded-3xl hover:bg-[--nexusBlue] duration-200 hover:border-white hover:text-white"
+>
+  <a href=`${route}`
+    ><span class="font-[Pixelify] hover:text-white uppercase text-5xl"
+      >{button_text}</span
+    ></a
+  >
+</button>

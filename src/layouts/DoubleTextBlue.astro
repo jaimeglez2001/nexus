@@ -1,0 +1,21 @@
+<body>
+  <main
+    class="main bg-[--nexusBlue] px-[120px] py-20 h-auto flex flex-col relative justify-center"
+  >
+    <figure>
+      <slot name="picture" />
+    </figure>
+
+    <section class="text-section w-full flex">
+      <article class="text_wrap">
+        <slot name="top_text" />
+      </article>
+    </section>
+
+    <section class="text-section w-full flex justify-end">
+      <article class="text_wrap">
+        <slot name="bot_text" />
+      </article>
+    </section>
+  </main>
+</body>

@@ -1,0 +1,10 @@
+---
+import Button from "../components/Button.astro";
+const { button_text, route } = Astro.props;
+---
+
+<section
+  class="bg-white main flex justify-center items-center h-[100vh] relative border-t-2 border-gray-300"
+>
+  <Button button_text={button_text} route={route} />
+</section>
