@@ -66,7 +66,7 @@
 
 {#if layout === "vertical"}
 <main
-  class="bg-white py-20 flex flex-col justify-center items-center"
+  class="bg-white pb-20 flex flex-col justify-center items-center"
 >
   <section class="max-w-[1500px] flex flex-col gap-6 justify-center">
     <section class="ctas flex justify-between">
@@ -81,10 +81,10 @@
       </article>
       <article class="arrows flex gap-4 justify-end items-center">
         <button class="p-4 border-2 border-black" on:click={countDown}>
-          <img src="/arrow-left.svg" alt="" class="h-10" />
+          <img src="/arrow-left.svg" alt="" class="h-5" />
         </button>
         <button class="p-4 border-2 border-black" on:click={countUp}>
-          <img src="/arrow-right.svg" alt="" class="h-10" />
+          <img src="/arrow-right.svg" alt="" class="h-5" />
         </button>
       </article>
     </section>
@@ -92,7 +92,7 @@
       <article
         class="text_wrap bg-[--nexusBlue] w-full p-10 flex items-end h-full"
       >
-        <p class="text-white text-[24px] leading-8 tex-pretty">
+        <p class="text-white text-[18px] leading-6 tex-pretty">
           {etapas[count].ejemplo}
         </p>
       </article>
