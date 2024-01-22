@@ -39,10 +39,10 @@
       </article>
       <article class="arrows flex gap-4 justify-end items-center">
         <button class="p-4 border-2 border-black" on:click={countDown}>
-          <img src="./public/arrow-left.svg" alt="" class="h-10" />
+          <img src="/arrow-left.svg" alt="" class="h-10" />
         </button>
         <button class="p-4 border-2 border-black" on:click={countUp}>
-          <img src="./public/arrow-right.svg" alt="" class="h-10" />
+          <img src="/arrow-right.svg" alt="" class="h-10" />
         </button>
       </article>
     </section>
@@ -81,10 +81,10 @@
       </article>
       <article class="arrows flex gap-4 justify-end items-center">
         <button class="p-4 border-2 border-black" on:click={countDown}>
-          <img src="./public/arrow-left.svg" alt="" class="h-10" />
+          <img src="/arrow-left.svg" alt="" class="h-10" />
         </button>
         <button class="p-4 border-2 border-black" on:click={countUp}>
-          <img src="./public/arrow-right.svg" alt="" class="h-10" />
+          <img src="/arrow-right.svg" alt="" class="h-10" />
         </button>
       </article>
     </section>

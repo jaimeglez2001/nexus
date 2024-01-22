@@ -5,9 +5,9 @@ const { title, text } = Astro.props;
 <section
   class="card bg-[--nexusBlue] size-[410px] flex flex-col items-center justify-center gap-8 p-8"
 >
-  <picture>
+  <figure>
     <slot name="picture" />
-  </picture>
+  </figure>
   <article class="text_wrap">
     <h5 class="highlight_small_white text-[32px]">{title}</h5>
     <p class="text-[18px] text-white">

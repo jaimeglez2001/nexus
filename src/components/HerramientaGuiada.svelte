@@ -74,7 +74,7 @@
 <section class="flex flex-col gap-40 items-center">
   <article class="ctos flex gap-10 pt-40">
     <button on:click={volverAtras} class="flex gap-4 items-center">
-      <figure><img src="./public/arrow-left.svg" alt="Flecha de Volver"></figure>
+      <figure><img src="/arrow-left.svg" alt="Flecha de Volver"></figure>
       Volver Atrás</button
     >
   </article>

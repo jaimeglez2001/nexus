@@ -4,7 +4,7 @@ const { title = "", img = "", text = "" } = Astro.props;
 
 <section class="card flex flex-col gap-10 w-[342px]">
   <picture>
-    <img src=`./public/${img}` alt="" />
+    <img src=`/${img}` alt="" />
   </picture>
   <article class="text_wrap flex flex-col gap-4">
     <h5 class="highlight_small text-[24px]">{title}</h5>
