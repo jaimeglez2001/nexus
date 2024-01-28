@@ -1,30 +1,29 @@
 ---
-import HerramientaAvanzada from "../components/HerramientaAvanzada.svelte";
+import HerramientaGuiada from "../components/HerramientaGuiada.svelte";
 import NavBar from "../components/NavBar.svelte";
-import DescripcionFases from "../layouts/DescripcionFases.svelte";
 ---
+
+<script type="module"></script>
 
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Actualización en Tiempo Real</title>
-    <link rel="icon" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.svg">
   </head>
   <body>
     <header class="wrap z-1">
-      <NavBar nav="/herramienta" />
-      <a href="herramienta"
+      <NavBar nav="/creatuhuella" />
+      <a href="creatuhuella-manual"
         ><span
           class="py-4 px-6 border-2 border-[--nexusBlue] highlight_small hover:bg-[--nexusBlue] duration-200 hover:text-white top-40 right-10 fixed"
-          >Modo Guiado</span
+          >Modo Manual</span
         ></a
       >
     </header>
-
-    <main class="flex gap-20 px-[120px] justify-center items-center pt-40">
-      <DescripcionFases layout={"vertical"} client:load />
-      <HerramientaAvanzada client:load />
+    <main class="w-full flex items-center py-[50px] flex-col">
+      <HerramientaGuiada client:load />
     </main>
   </body>
 </html>
@@ -34,43 +33,30 @@ import DescripcionFases from "../layouts/DescripcionFases.svelte";
   @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,800&display=swap");
 
   @font-face {
-    font-family: "Connect";
-    src: url("/Connect.ttf") format("truetype-variations");
-  }
-  @font-face {
-    font-family: "Pixelify";
-    src: url("/PixelifySans-Regular.ttf");
-  }
-  @font-face {
-    font-family: "Pixelify";
-    src: url("/PixelifySans-SemiBold.ttf");
-  }
-
+      font-family: "Connect";
+      src: url("/Connect.ttf")
+        format("truetype-variations");
+    }
+    @font-face {
+      font-family: "Pixelify";
+      src: url("/PixelifySans-Regular.ttf");
+    }
+    @font-face {
+      font-family: "Pixelify";
+      src: url("/PixelifySans-SemiBold.ttf");
+    }
   :root {
     --weightH1: 1000;
     --weightH2: 100;
     --nexusBlue: #1945df;
     font-family: "Raleway";
   }
-  h1 {
-    font-size: 128px;
-    line-height: 110px;
-  }
   h2 {
-    font-size: 64px;
-    line-height: 72px;
+    font-size: 300px;
+    line-height: 90px;
+    letter-spacing: -90px;
   }
-  h3 {
-    font-size: 48px;
-    line-height: 56px;
-  }
-  h4 {
-    font-size: 36px;
-    line-height: 40px;
-  }
-  p {
-    font-size: 18px;
-  }
+
   .animated {
     margin: 0;
     font-variation-settings:
@@ -104,5 +90,9 @@ import DescripcionFases from "../layouts/DescripcionFases.svelte";
     color: white;
     font-family: "Pixelify";
     letter-spacing: -0.5rem;
+  }
+  .fases {
+    height: 200px;
+    margin-bottom: 100px;
   }
 </style>

@@ -87,69 +87,57 @@
     </article>
     <ul class="flex gap-10 items-center">
       <li>
-        <a href="/">
-          <button
-            class="p-4 hover:bg-[--nexusBlue] hover:text-white h-full {setActiveClass(
-              '/'
-            )}"
-          >
-            Home
-          </button>
+        <a href="/"
+          class="p-4 hover:bg-[--nexusBlue] hover:text-white h-full {setActiveClass(
+            "/"
+          )}"> Home
         </a>
       </li>
       <li>
-        <a href="conexionhumana">
-          <button
-            class="p-4 hover:bg-[--nexusBlue] hover:text-white h-full {setActiveClass(
-              '/conexionhumana'
-            )}"
-          >
-            Conexiones Humanas
-          </button>
+        <a href="conexionhumana"
+          class="p-4 hover:bg-[--nexusBlue] hover:text-white h-full {setActiveClass(
+            "/conexionhumana"
+          )}"> Conexiones Humanas
         </a>
       </li>
       <li>
-        <a href="relacionesinterpersonales">
-          <button
-            class="p-4 hover:bg-[--nexusBlue] hover:text-white h-full {setActiveClass(
-              '/relacionesinterpersonales'
-            )}"
-          >
-            Relaciones Interpersonales
-          </button>
+        <a
+          href="relacionesinterpersonales"
+          class="p-4 hover:bg-[--nexusBlue] hover:text-white h-full {setActiveClass(
+            '/relacionesinterpersonales'
+          )}"
+        >
+          Relaciones Interpersonales
         </a>
       </li>
       <li>
-        <a href="proxemica">
-          <button
-            class="p-4 hover:bg-[--nexusBlue] hover:text-white h-full {setActiveClass(
-              '/proxemica'
-            )}"
-          >
-            Proxémica
-          </button>
+        <a
+          href="proxemica"
+          class="p-4 hover:bg-[--nexusBlue] hover:text-white h-full {setActiveClass(
+            '/proxemica'
+          )}"
+        >
+          Proxémica
         </a>
       </li>
       <li>
-        <a href="nexus">
-          <button
-            class="p-4 hover:bg-[--nexusBlue] hover:text-white h-full {setActiveClass(
-              '/nexus'
-            )}"
-          >
-            Nexus
-          </button>
+        <a
+          href="nexus"
+          class="p-4 hover:bg-[--nexusBlue] hover:text-white h-full {setActiveClass(
+            '/nexus'
+          )}"
+        >
+          Nexus
         </a>
       </li>
       <li>
-        <a href="herramienta">
-          <button
-            class="p-4 hover:bg-[--nexusBlue] hover:text-white h-full {setActiveClass(
-              '/herramienta'
-            )}"
-          >
-            Crea tu huella
-          </button>
+        <a
+          href="creatuhuella"
+          class="p-4 hover:bg-[--nexusBlue] hover:text-white h-full {setActiveClass(
+            '/creatuhuella'
+          )}"
+        >
+          Crea tu huella
         </a>
       </li>
     </ul>
