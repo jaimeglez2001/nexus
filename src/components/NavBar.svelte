@@ -60,7 +60,7 @@
 
   getRandomLetter();
 
-  let currentPath = nav; //
+  let currentPath = nav; 
 
   const setActiveClass = (path) => {
     return path === currentPath ? "active" : "";

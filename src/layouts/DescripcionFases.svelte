@@ -10,14 +10,12 @@
     if (count > 0) {
       count--;
     }
-    console.log(count);
   }
 
   function countUp() {
     if (count < 9) {
       count++;
     }
-    console.log(count);
   }
 </script>
 

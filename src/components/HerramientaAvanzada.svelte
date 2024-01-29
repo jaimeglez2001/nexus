@@ -7,17 +7,10 @@
   let inputText = "";
 
   function renderHuella() {
-    // Actualiza las variables de fila según el texto de entrada
-    // Puedes ajustar esta lógica según tus necesidades
     firstRow = inputText.substring(0, 2);
     secondRow = inputText.substring(2, 5);
     thirdRow = inputText.substring(5, 8);
     fourthRow = inputText.substring(8, 10);
-
-    // Puedes realizar otras operaciones según sea necesario
-
-    // Muestra el contenido actualizado en la consola (puedes eliminar esto en producción)
-    console.log(firstRow, secondRow, thirdRow, fourthRow);
   }
 </script>
 
@@ -32,7 +25,9 @@
       on:input={renderHuella}
     />
   </article>
-  <article class="fases w-full h-[500px] flex items-center justify-center flex-col mb-40">
+  <article
+    class="fases w-full h-[500px] flex items-center justify-center flex-col mb-40"
+  >
     <h4
       class="animated text-[--nexusBlue] text-[300px] leading-[60px] tracking-[-120px]"
       style="white-space: pre-line;"
@@ -43,5 +38,4 @@
       {fourthRow}
     </h4>
   </article>
-  
 </section>
